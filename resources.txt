@@ -1,0 +1,3 @@
+http://gridster.net/
+http://net.tutsplus.com/tutorials/javascript-ajax/build-a-top-panel-with-jquery/
+https://code.google.com/p/jquery-tubular/
