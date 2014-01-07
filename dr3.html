@@ -5,6 +5,8 @@
   <title>Demo &raquo; Add widgets dynamically &raquo; gridster.js</title>
   <link rel="stylesheet" type="text/css" href='js/gridster/dist/jquery.gridster.css'>
   <link rel="stylesheet" type="text/css" href='theme/style.css'>
+  <link rel="stylesheet" type="text/css" href='js/toastr/toastr.min.css'>
+  
 </head>
 
 <body>
@@ -31,6 +33,7 @@
 
     <script type="text/javascript" src='js/jquery.js'></script>
     <script src='js/gridster/dist/jquery.gridster.js' type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src='js/toastr/toastr.min.js'></script>
 
     <script type="text/javascript" id="code">
     var gridster;
@@ -39,6 +42,7 @@
 
     $(function(){
 
+    //Options
       gridster = $(".gridster > ul").gridster({
           widget_margins: [5, 5],
           widget_base_dimensions: [100, 55],
@@ -46,6 +50,22 @@
             enabled: true
           }
       }).data('gridster');
+
+
+      toastr.options = {
+		  "closeButton": false,
+		  "debug": false,
+		  "positionClass": "toast-top-right",
+		  "onclick": null,
+		  "showDuration": "300",
+		  "hideDuration": "1000",
+		  "timeOut": "5000",
+		  "extendedTimeOut": "1000",
+		  "showEasing": "swing",
+		  "hideEasing": "linear",
+		  "showMethod": "fadeIn",
+		  "hideMethod": "fadeOut"
+		}
 
       var widgets = [
           ['<li><iframe width=90% height =90% src="http://weather.mobi/"></iframe><input type="checkbox" name="options[]" value="0" /></li>', 2, 5],
@@ -57,10 +77,12 @@
           gridster.add_widget.apply(gridster, widget)
       });
 
+
       $("#add").click( function() {
         var wid = ['<li><iframe src=' + $("#site").val() + ' style="width:100%; height:90%;"></iframe><input type="checkbox" name="options[]" value="' + count + '" /></li>', 3, 6];
         count++;
         gridster.add_widget.apply(gridster, wid);
+        toastr.success(" ", "Peg Successfully Added");
       })
 
       $("#delete").on('click', function() {
