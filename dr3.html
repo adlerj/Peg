@@ -67,11 +67,18 @@
 		  "hideMethod": "fadeOut"
 		}
 
-      var widgets = [
-          ['<li><iframe width=90% height =90% src="http://weather.mobi/"></iframe><input type="checkbox" name="options[]" value="0" /></li>', 2, 5],
+     /* var widgets = [
+         ['<li><iframe width=90% height =90% src="http://weather.mobi/"></iframe><input type="checkbox" name="options[]" value="0" /></li>', 2, 5],
           ['<li><iframe width=90% height=90% src="https://www.youtube.com/embed/eIInySnQe4I" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="options[]" value="1" /></li>', 4, 3],
           ['<li><iframe width=90% height=90% frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=40.85968,-74.157769&amp;spn=0.21318,0.308647&amp;t=h&amp;z=12&amp;output=embed"></iframe><br /><input type="checkbox" name="options[]" value="2" /></li>', 4, 4]
-      ];
+      ];*/
+
+      var widgets = [
+         ['<li>1</li>', 2, 2],
+         ['<li>2</li>', 2, 2],
+         ['<li>3</li>', 2, 2],
+         ['<li>4</li>', 2, 2]
+         ];
 
       $.each(widgets, function(i, widget){
           gridster.add_widget.apply(gridster, widget)

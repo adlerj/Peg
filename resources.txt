@@ -2,4 +2,3 @@ http://gridster.net/
 http://net.tutsplus.com/tutorials/javascript-ajax/build-a-top-panel-with-jquery/
 https://code.google.com/p/jquery-tubular/
 http://www.sunnytuts.com/article/login-and-registration-with-object-oriented-php-and-pdo
-BOXQK
