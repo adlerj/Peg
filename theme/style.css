@@ -16,9 +16,10 @@ ul {
 body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #29CEAD;
+    color: #66FFFF;
+    background-color: #C0C0C0;
     margin: 30px 40px;
-    background-image:url('bg.png');
+    /*background-image:url('bg.png');*/
 }
 
 .controls {
@@ -30,8 +31,8 @@ body {
 /*/
 
 .gridster ul {
-    background-color: #EFEFEF;
-    background-image:url('cork.jpg');
+    background-color: #FF9933;
+    /*background-image:url('cork.jpg');*/
 }
 
 .gridster li {
@@ -55,8 +56,8 @@ body {
 }
 
 .gridster .gs-w {
-    background: #DDD;
-    background-image:url('wood.jpg');
+    background: #CC00CC;
+    /*background-image:url('wood.jpg');*/
     cursor: pointer;
 }
 
