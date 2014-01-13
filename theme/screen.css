@@ -52,7 +52,15 @@ ol { margin-left: 36px; }
 	____________________________
 */
 
-.black-50 { background: url(../theme/black-50-trans.png); color: #fff; padding: 4px 12px; margin: 24px 0; }
+.black-50 { 
+	/*background: url(../theme/black-50-trans.png); */
+	background:rgba(227,188,95,0.5);
+	color: #fff; 
+	padding: 4px 12px; 
+	margin: 24px 0; 
+	-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;}
 
 /*.black-15 { background: url(../media/black-15-trans.png); color: #fff; padding: 4px 12px; margin: 24px 0; }
 .black-35 { background: url(../media/black-35-trans.png); color: #fff; padding: 4px 12px; margin: 24px 0; }

@@ -56,8 +56,14 @@ body {
 }
 
 .gridster .gs-w {
-    background: #CC00CC;
-    /*background-image:url('wood.jpg');*/
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    border-radius: 43px;
+    border:3px solid #2A6116;
+    background-color:#E332A2;
+   /* -webkit-box-shadow: #B3B3B3 26px 26px 26px;
+    -moz-box-shadow: #B3B3B3 26px 26px 26px; 
+    box-shadow: #B3B3B3 26px 26px 26px;*/
     cursor: pointer;
 }
 
